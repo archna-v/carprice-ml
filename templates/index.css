@@ -1,0 +1,141 @@
+body.bg-dark {
+    background: linear-gradient(135deg, #d71aa5, #27c88a, #14cde2);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #111111;
+    padding-top: 40px;
+}
+
+.card {
+    background-color: #bc38b8;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.6);
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.01);
+    box-shadow: 0 15px 35px rgba(188, 15, 15, 0.7);
+}
+
+.card-header {
+    background: linear-gradient(to right, #56ccf2, #2f80ed);
+    color: white;
+    padding: 20px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    text-align: center;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap');
+
+h1 {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 3.5rem;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    padding: 20px 40px;
+    margin: 30px auto;
+    border-radius: 18px;
+    background: linear-gradient(90deg, #1e90ff, #6434de);
+    color: #ffffff;
+    box-shadow:
+        0 0 10px rgba(84, 222, 74, 0.7),
+        0 0 20px rgba(0, 153, 255, 0.6),
+        inset 0 0 10px rgba(162, 206, 18, 0.2);
+
+    text-shadow:
+        0 0 5px #ffffff,
+        0 0 10px #2ec4ff,
+        0 0 15px #00e6ff;
+
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0% {
+        box-shadow:
+            0 0 10px rgba(0, 213, 255, 0.7),
+            0 0 20px rgba(0, 153, 255, 0.6),
+            inset 0 0 10px rgba(255, 255, 255, 0.2);
+    }
+    100% {
+        box-shadow:
+            0 0 15px rgba(0, 255, 255, 0.9),
+            0 0 30px rgba(0, 153, 255, 0.8),
+            inset 0 0 14px rgba(255, 255, 255, 0.4);
+    }
+}
+
+
+label {
+    font-size: 1.1rem;
+    color: #ffffff;
+}
+
+.form-group {
+    margin: 20px auto;
+}
+
+select, input {
+    background-color: #515451 !important;
+    color: #ffffff !important;
+    border: none !important;
+    border-radius: 8px !important;
+    box-shadow: inset 0 0 5px rgba(207, 28, 231, 0.5);
+    transition: all 0.3s ease;
+}
+
+select:focus, input:focus {
+    box-shadow: 0 0 10px #56ccf2;
+    outline: none;
+}
+
+.btn-primary {
+    background: linear-gradient(to right, #3fa2e4, #e41e77);
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.btn-primary:hover {
+    background: linear-gradient(to right, #e135cf, #3f5efb);
+    transform: scale(1.03);
+}
+
+#prediction {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #530eea;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pop-in {
+    0% {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        margin: 0 10px;
+    }
+
+    .form-group {
+        width: 100% !important;
+    }
+}
