@@ -4,11 +4,11 @@ import pickle
 import pandas as pd
 import numpy as np
 
-app = Flask(__name__)
+app= Flask(__name__)
 cors = CORS(app)
 
 # Load the trained model and dataset
-model = pickle.load(open('LinearRegressionModel.pkl', 'rb'))
+model= pickle.load(open('LinearRegressionModel.pkl', 'rb'))
 car = pd.read_csv('Cleaned_Car_data.csv')
 
 # Route to serve CSS from templates folder
