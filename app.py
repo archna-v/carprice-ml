@@ -9,7 +9,7 @@ cors = CORS(app)
 
 # Load the trained model and dataset
 model= pickle.load(open('LinearRegressionModel.pkl', 'rb'))
-car = pd.read_csv('Cleaned_Car_data.csv')
+car = pd.read_csv('Cleaned_cars_data.csv')
 
 # Route to serve CSS from templates folder
 @app.route('/index.css')
